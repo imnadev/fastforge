@@ -289,7 +289,7 @@ class UnifiedDistributor {
         outputDirectory.createSync(recursive: true);
       }
 
-      List<Release> releases = [];
+      List<Release> releases = distributeOptions.releases;
 
       if (name.isNotEmpty) {
         releases =
